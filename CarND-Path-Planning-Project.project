@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="CarND-Path-Planning-Project" Version="10.0.0" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00010001N0005Debug000000000000]]>
+    </Plugin>
+  </Plugins>
+  <VirtualDirectory Name="src">
+    <VirtualDirectory Name="Eigen-3.3">
+      <VirtualDirectory Name="Eigen">
+        <VirtualDirectory Name="src">
+          <VirtualDirectory Name="Core">
+            <VirtualDirectory Name="arch">
+              <VirtualDirectory Name="AVX512">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AVX512/PacketMath.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AVX512/MathFunctions.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="SSE">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/SSE/PacketMath.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/SSE/Complex.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/SSE/TypeCasting.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/SSE/MathFunctions.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="AVX">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AVX/PacketMath.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AVX/Complex.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AVX/TypeCasting.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AVX/MathFunctions.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="NEON">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/NEON/PacketMath.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/NEON/Complex.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/NEON/MathFunctions.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="CUDA">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMath.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Complex.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/CUDA/PacketMathHalf.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/CUDA/TypeCasting.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/CUDA/MathFunctions.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/CUDA/Half.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="AltiVec">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/PacketMath.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/Complex.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/AltiVec/MathFunctions.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="ZVector">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/ZVector/PacketMath.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/ZVector/Complex.h"/>
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/ZVector/MathFunctions.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Default">
+                <File Name="src/Eigen-3.3/Eigen/src/Core/arch/Default/Settings.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+            <VirtualDirectory Name="products">
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/SelfadjointRank2Update.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/Parallelizer.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverMatrix.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/GeneralBlockPanelKernel.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/TriangularSolverVector.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/SelfadjointProduct.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/products/SelfadjointMatrixVector.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="util">
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/BlasUtil.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/StaticAssert.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/XprHelper.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/Memory.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/Macros.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/DisableStupidWarnings.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/NonMPL2.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/ReenableStupidWarnings.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/Meta.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/Constants.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/MKL_support.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/util/ForwardDeclarations.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="functors">
+              <File Name="src/Eigen-3.3/Eigen/src/Core/functors/AssignmentFunctors.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/functors/TernaryFunctors.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/functors/UnaryFunctors.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/functors/NullaryFunctors.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/functors/StlFunctors.h"/>
+              <File Name="src/Eigen-3.3/Eigen/src/Core/functors/BinaryFunctors.h"/>
+            </VirtualDirectory>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Transpose.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Transpositions.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Assign.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/ConditionEstimator.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CwiseTernaryOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/SolverBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Stride.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Random.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Map.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/MatrixBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/DiagonalProduct.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/GlobalFunctions.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/StableNorm.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/IO.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/EigenBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/DenseBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Select.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CwiseBinaryOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/BooleanRedux.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/MathFunctionsImpl.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Product.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Array.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/DenseCoeffsBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/AssignEvaluator.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Reverse.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Replicate.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/DenseStorage.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/VectorBlock.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CwiseUnaryView.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CommaInitializer.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/MathFunctions.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CwiseUnaryOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/SelfAdjointView.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/NumTraits.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Solve.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/VectorwiseOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Redux.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/NoAlias.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/PlainObjectBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/NestByValue.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Inverse.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/TriangularMatrix.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/MapBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/ForceAlignedAccess.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/SolveTriangular.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/DiagonalMatrix.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/ProductEvaluators.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Dot.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/ArrayWrapper.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Assign_MKL.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Block.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/GenericPacketMath.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Diagonal.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/ReturnByValue.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Ref.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CoreEvaluators.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/ArrayBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Swap.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CoreIterators.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/SelfCwiseBinaryOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/GeneralProduct.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Visitor.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Matrix.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/Fuzzy.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/CwiseNullaryOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/PermutationMatrix.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Core/BandMatrix.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="LU">
+            <VirtualDirectory Name="arch">
+              <File Name="src/Eigen-3.3/Eigen/src/LU/arch/Inverse_SSE.h"/>
+            </VirtualDirectory>
+            <File Name="src/Eigen-3.3/Eigen/src/LU/PartialPivLU.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/LU/Determinant.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/LU/InverseImpl.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/LU/PartialPivLU_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/LU/FullPivLU.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Geometry">
+            <VirtualDirectory Name="arch">
+              <File Name="src/Eigen-3.3/Eigen/src/Geometry/arch/Geometry_SSE.h"/>
+            </VirtualDirectory>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/ParametrizedLine.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Homogeneous.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Umeyama.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Translation.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/RotationBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/EulerAngles.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/AlignedBox.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Hyperplane.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Scaling.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Transform.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Quaternion.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/AngleAxis.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/Rotation2D.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Geometry/OrthoMethods.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="plugins">
+            <File Name="src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseBinaryOps.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseBinaryOps.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/plugins/MatrixCwiseUnaryOps.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/plugins/CommonCwiseBinaryOps.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/plugins/BlockMethods.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/plugins/CommonCwiseUnaryOps.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/plugins/ArrayCwiseUnaryOps.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Eigenvalues">
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/EigenSolver.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/ComplexSchur.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/HessenbergDecomposition.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/RealSchur.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/ComplexEigenSolver.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/Tridiagonalization.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Eigenvalues/RealQZ.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="OrderingMethods">
+            <File Name="src/Eigen-3.3/Eigen/src/OrderingMethods/Amd.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/OrderingMethods/Eigen_Colamd.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/OrderingMethods/Ordering.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SparseCholesky">
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCholesky/SimplicialCholesky.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SVD">
+            <File Name="src/Eigen-3.3/Eigen/src/SVD/JacobiSVD_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SVD/UpperBidiagonalization.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SVD/BDCSVD.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SVD/JacobiSVD.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SVD/SVDBase.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="StlSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/StlSupport/StdList.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/StlSupport/StdDeque.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/StlSupport/StdVector.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/StlSupport/details.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="PardisoSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/PardisoSupport/PardisoSupport.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="misc">
+            <File Name="src/Eigen-3.3/Eigen/src/misc/blas.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/misc/Image.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/misc/lapacke.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/misc/RealSvd2x2.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/misc/lapacke_mangling.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/misc/Kernel.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/misc/lapack.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SparseLU">
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_pruneL.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_relax_snode.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLUImpl.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_panel_bmod.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_Structs.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_panel_dfs.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_column_dfs.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_column_bmod.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_Utils.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_pivotL.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_Memory.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SparseCore">
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseUtil.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseSelfAdjointView.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseCompressedBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseView.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseRef.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseTriangularView.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseDiagonalProduct.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseSolverBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/TriangularSolver.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparsePermutation.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseMap.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseVector.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/MappedSparseMatrix.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseTranspose.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseMatrix.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseFuzzy.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseDenseProduct.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseColEtree.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseBlock.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/AmbiVector.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseProduct.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseRedux.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseAssign.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseDot.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/SparseMatrixBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/SparseCore/CompressedStorage.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="PaStiXSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/PaStiXSupport/PaStiXSupport.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="UmfPackSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/UmfPackSupport/UmfPackSupport.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SuperLUSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/SuperLUSupport/SuperLUSupport.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="QR">
+            <File Name="src/Eigen-3.3/Eigen/src/QR/HouseholderQR.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/QR/HouseholderQR_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/QR/CompleteOrthogonalDecomposition.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/QR/FullPivHouseholderQR.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="MetisSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/MetisSupport/MetisSupport.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SparseQR">
+            <File Name="src/Eigen-3.3/Eigen/src/SparseQR/SparseQR.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Jacobi">
+            <File Name="src/Eigen-3.3/Eigen/src/Jacobi/Jacobi.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Householder">
+            <File Name="src/Eigen-3.3/Eigen/src/Householder/BlockHouseholder.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Householder/Householder.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Householder/HouseholderSequence.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="CholmodSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/CholmodSupport/CholmodSupport.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="IterativeLinearSolvers">
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="SPQRSupport">
+            <File Name="src/Eigen-3.3/Eigen/src/SPQRSupport/SuiteSparseQRSupport.h"/>
+          </VirtualDirectory>
+          <VirtualDirectory Name="Cholesky">
+            <File Name="src/Eigen-3.3/Eigen/src/Cholesky/LDLT.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Cholesky/LLT_LAPACKE.h"/>
+            <File Name="src/Eigen-3.3/Eigen/src/Cholesky/LLT.h"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="unsupported">
+        <VirtualDirectory Name="Eigen">
+          <VirtualDirectory Name="src">
+            <VirtualDirectory Name="SpecialFunctions">
+              <VirtualDirectory Name="arch">
+                <VirtualDirectory Name="CUDA">
+                  <File Name="src/Eigen-3.3/unsupported/Eigen/src/SpecialFunctions/arch/CUDA/CudaSpecialFunctions.h"/>
+                </VirtualDirectory>
+              </VirtualDirectory>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsPacketMath.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsFunctors.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsImpl.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsArrayAPI.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SpecialFunctions/SpecialFunctionsHalf.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="Splines">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Splines/Spline.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Splines/SplineFitting.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Splines/SplineFwd.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="Eigenvalues">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Eigenvalues/ArpackSelfAdjointEigenSolver.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="FFT">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/FFT/ei_fftw_impl.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="AutoDiff">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/AutoDiff/AutoDiffScalar.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/AutoDiff/AutoDiffJacobian.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/AutoDiff/AutoDiffVector.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="LevenbergMarquardt">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/LevenbergMarquardt/LMqrsolv.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/LevenbergMarquardt/LevenbergMarquardt.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/LevenbergMarquardt/LMpar.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/LevenbergMarquardt/LMcovar.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/LevenbergMarquardt/LMonestep.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="BVH">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/BVH/KdBVH.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/BVH/BVAlgorithms.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="EulerAngles">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/EulerAngles/EulerAngles.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/EulerAngles/EulerSystem.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="Polynomials">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Polynomials/Companion.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Polynomials/PolynomialSolver.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Polynomials/PolynomialUtils.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="SparseExtra">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SparseExtra/DynamicSparseMatrix.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SparseExtra/MarketIO.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SparseExtra/BlockOfDynamicSparseMatrix.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SparseExtra/BlockSparseMatrix.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SparseExtra/MatrixMarketIterator.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/SparseExtra/RandomSetter.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="NonLinearOptimization">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/HybridNonLinearSolver.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/rwupdt.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/r1updt.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/qrsolv.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/fdjac1.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/chkder.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/dogleg.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/covar.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/lmpar.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NonLinearOptimization/r1mpyq.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="Skyline">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Skyline/SkylineUtil.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Skyline/SkylineProduct.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Skyline/SkylineStorage.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Skyline/SkylineInplaceLU.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Skyline/SkylineMatrix.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/Skyline/SkylineMatrixBase.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="KroneckerProduct">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/KroneckerProduct/KroneckerTensorProduct.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="MoreVectorization">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/MoreVectorization/MathFunctions.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="NumericalDiff">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/NumericalDiff/NumericalDiff.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="MatrixFunctions">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/MatrixFunctions/MatrixPower.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/MatrixFunctions/MatrixSquareRoot.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/MatrixFunctions/MatrixExponential.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/MatrixFunctions/StemFunction.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/MatrixFunctions/MatrixLogarithm.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/MatrixFunctions/MatrixFunction.h"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="IterativeSolvers">
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/IterativeSolvers/MINRES.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/IterativeSolvers/ConstrainedConjGrad.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/IterativeSolvers/DGMRES.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/IterativeSolvers/Scaling.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/IterativeSolvers/IterationController.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/IterativeSolvers/GMRES.h"/>
+              <File Name="src/Eigen-3.3/unsupported/Eigen/src/IterativeSolvers/IncompleteLU.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="CXX11">
+            <VirtualDirectory Name="src">
+              <VirtualDirectory Name="TensorSymmetry">
+                <VirtualDirectory Name="util">
+                  <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/TensorSymmetry/util/TemplateGroupTheory.h"/>
+                </VirtualDirectory>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/TensorSymmetry/DynamicSymmetry.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/TensorSymmetry/Symmetry.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/TensorSymmetry/StaticSymmetry.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="Tensor">
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensions.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclRun.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclExtractAccessor.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorChipping.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionThreadPool.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorUInt128.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorReduction.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorIntDiv.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorIO.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclTuple.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclExtractFunctors.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorArgMax.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorAssign.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSycl.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorCostModel.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorForcedEval.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorRef.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionCuda.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorReverse.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorConvolution.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorExpr.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorRandom.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionCuda.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorVolumePatch.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorEvaluator.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorGlobalFunctions.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorMeta.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorCustomOp.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorPatch.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclPlaceHolderExpr.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclExprConstructor.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorShuffling.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorLayoutSwap.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorDimensionList.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/Tensor.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclConvertToDeviceExpression.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorConcatenation.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorPadding.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceDefault.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorForwardDeclarations.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorBroadcasting.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorFunctors.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionMapper.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorStriding.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorInitializer.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorScan.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorFFT.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceCuda.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceSycl.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorSyclLeafCount.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorEvalTo.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorConversion.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorBase.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorStorage.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorMorphing.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorMacros.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorInflation.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorExecutor.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorDevice.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorIndexList.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorReductionSycl.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorGenerator.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorImagePatch.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorTraits.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorContractionBlocking.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorMap.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorDeviceThreadPool.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorFixedSize.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="util">
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/util/MaxSizeVector.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/util/EmulateArray.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/util/CXX11Meta.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/util/CXX11Workarounds.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/util/EmulateCXX11Meta.h"/>
+              </VirtualDirectory>
+              <VirtualDirectory Name="ThreadPool">
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadEnvironment.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadYield.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadLocal.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/SimpleThreadPool.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/EventCount.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/RunQueue.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/ThreadPoolInterface.h"/>
+                <File Name="src/Eigen-3.3/unsupported/Eigen/CXX11/src/ThreadPool/NonBlockingThreadPool.h"/>
+              </VirtualDirectory>
+            </VirtualDirectory>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="test">
+          <VirtualDirectory Name="mpreal">
+            <File Name="src/Eigen-3.3/unsupported/test/mpreal/mpreal.h"/>
+          </VirtualDirectory>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_custom_op.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_random.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_ifft.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_simple.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_runqueue.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/matrix_function.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_inflation.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/NumericalDiff.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/matrix_square_root.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/dgmres.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_of_const_values.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_const.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_reduction_sycl.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_assign.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/polynomialutils.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/minres.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/sparse_extra.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/matrix_functions.h"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_custom_index.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_of_strings.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/NonLinearOptimization.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/BVH.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_shuffling.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/autodiff_scalar.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/autodiff.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_meta.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_notification.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_chipping.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/mpreal_support.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_non_blocking_thread_pool.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_forced_eval.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_math.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_device_sycl.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/alignedvector3.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_thread_pool.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_eventcount.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_forced_eval_sycl.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_volume_patch.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_roundings.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/EulerAngles.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_empty.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/matrix_power.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/polynomialsolver.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_expr.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_casts.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/matrix_exponential.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/forward_adolc.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/levenberg_marquardt.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_reverse.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_layout_swap.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_concatenation.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_convolution.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/FFT.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_fixed_size.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_broadcast_sycl.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/FFTW.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_comparisons.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_uint128.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/splines.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_patch.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_padding.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/gmres.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_intdiv.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_dimension.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_contraction.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_fft.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_scan.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_reduction.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_argmax.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_io.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_broadcasting.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_ref.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_mixed_indices.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_morphing.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_of_complex.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_sugar.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_generator.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/kronecker_product.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_symmetry.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_index_list.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_lvalue.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_image_patch.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_striding.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_map.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/cxx11_tensor_sycl.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/openglsupport.cpp"/>
+          <File Name="src/Eigen-3.3/unsupported/test/special_functions.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="doc">
+          <VirtualDirectory Name="examples">
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixLogarithm.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixPower_optimal.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/PolynomialSolver1.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/PolynomialUtils1.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixSinh.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixSine.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/EulerAngles.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixSquareRoot.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixPower.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/FFT.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/BVH_Example.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixFunction.cpp"/>
+            <File Name="src/Eigen-3.3/unsupported/doc/examples/MatrixExponential.cpp"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="bench">
+          <File Name="src/Eigen-3.3/unsupported/bench/bench_svd.cpp"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="doc">
+        <VirtualDirectory Name="snippets">
+          <File Name="src/Eigen-3.3/doc/snippets/Map_general_stride.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_leftCols.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_rightCols_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_solve_reuse_decomposition.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseEqual.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_bottomRows_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_tan.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_commainit_01b.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_bottomLeftCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_abs.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_isZero.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointView_operatorNorm.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_asDiagonal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_boolean_and.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_triangularView.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/tut_matrix_assignment_resizing.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_asin.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialRedux_count.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_diagonal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_block_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/ColPivHouseholderQR_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_fixedBlock_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_segment_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cast.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_SlicingVec.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/tut_arithmetic_transpose_aliasing.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_inverse.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_setOnes.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_minus.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_mult1.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_Map_using.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_topLeftCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setConstant_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_scalar_power_array.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_noalias.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/EigenSolver_eigenvalues.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_sin.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseQuotient.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tridiagonalization_decomposeInPlace.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_sqrt.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_applyOnTheLeft.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/tut_arithmetic_transpose_inplace.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_random.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_replicate_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_topRightCorner.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_log.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_selfadjointView.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_AdvancedInitialization_Join.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_AdvancedInitialization_CommaTemporary.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_operatorInverseSqrt.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_isUnitary.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/HessenbergDecomposition_packedMatrix.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_transpose.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_less.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_sign.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_topRightCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_identity_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/EigenSolver_EigenSolver_MatrixType.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setOnes_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/tut_arithmetic_redux_minmax.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_solve_triangular.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_acos.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_setRandom.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_applyOnTheRight.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_solve_multiple_rhs.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_ones_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_segment.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_isIdentity.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_bottomRightCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_pow.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_square.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_log10.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseProduct.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_bottomLeftCorner.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Map_outer_stride.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/LLT_example.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/DirectionWise_hnormalized.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicStorageOrders_example.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_ReshapeMat2Mat.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_eval.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_commainit_01.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_block_int_int_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_boolean_not.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/FullPivHouseholderQR_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_topRightCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseNotEqual.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_Map_rowmajor.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialRedux_squaredNorm.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_bottomRightCorner.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_resize_int_NoChange.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialRedux_maxCoeff.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_leftCols_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_eigenvalues.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_random_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tridiagonalization_diagonal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_cosh.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseSqrt.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_cube.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_isNaN.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_block_int_int_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setIdentity_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/EigenSolver_eigenvectors.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/HouseholderQR_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_mult3.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_compute_MatrixType2.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/RealSchur_compute.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_greater.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_AdvancedInitialization_Zero.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_product.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_quotient.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/ComplexSchur_compute.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Map_placement_new.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_replicate.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_prod.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/EigenSolver_compute.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/LeastSquaresQR.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/HouseholderSequence_HouseholderSequence.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_operatorNorm.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Jacobi_makeJacobi.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/DenseBase_setLinSpaced.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_plus_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Map_simple.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseSign.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_resize_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/FullPivLU_kernel.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_end_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/FullPivLU_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setZero_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_start.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/GeneralizedEigenSolver.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_diagonal_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_AdvancedInitialization_ThreeWays.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialRedux_sum.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/LLT_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setConstant_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_zero_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_all.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_block_correct.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_adjoint.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_select.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_ceil.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_topLeftCorner.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseMax.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_int_bottomLeftCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/BiCGSTAB_simple.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/ComplexEigenSolver_eigenvalues.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_isOnes.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/IOFormat.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Map_inner_stride.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Vectorwise_reverse.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_minus_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tridiagonalization_householderCoefficients.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SparseMatrix_coeffs.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_computeInverseAndDetWithCheck.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseInverse.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/LeastSquaresNormalEquations.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_commainit_02.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_SelfAdjointEigenSolver.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/HessenbergDecomposition_compute.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/ComplexSchur_matrixU.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_zero_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/EigenSolver_pseudoEigenvectors.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_eigenvectors.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_isInf.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_operatorSqrt.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_setZero.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_mult5.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_identity.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Triangular_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_set.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_array_power_array.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/class_FullPivLU.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/ComplexSchur_matrixT.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setRandom_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_topRows.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_ReshapeMat2Vec.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_rightCols.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tridiagonalization_packedMatrix.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_AdvancedInitialization_Block.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_start_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_solve_singular.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_array.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/DirectionWise_replicate.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialRedux_prod.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_col.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setZero_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/HessenbergDecomposition_matrixH.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_tanh.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_slash_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_min.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_inverse.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_block.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseMin.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tridiagonalization_compute.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_eigenvalues.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_isOrthogonal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseAbs2.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/AngleAxis_mimic_euler.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_resize_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/RealQZ_compute.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_floor.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_cwise.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_max.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialRedux_norm.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_end.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_homogeneous.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setRandom_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_mult4.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_bottomRightCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_solve_triangular_inplace.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_colwise.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_not_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/TopicAliasing_mult2.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_topRows_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_SlicingCol.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_ones.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_row.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/HouseholderQR_householderQ.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/DenseBase_LinSpaced.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_AdvancedInitialization_LinSpaced.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_isFinite.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_hnormalized.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/RealSchur_RealSchur_MatrixType.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_template_int_bottomRows.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/FullPivLU_image.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialRedux_minCoeff.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_isDiagonal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/JacobiSVD_basic.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/ComplexEigenSolver_compute.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointView_eigenvalues.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_topLeftCorner_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_zero.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_reverse.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/DenseBase_LinSpacedInt.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_equal_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_boolean_or.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_boolean_xor.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_plus.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_setOnes_int_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_ones_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_setIdentity.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tridiagonalization_Tridiagonalization_MatrixType.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_cos.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/BiCGSTAB_step_by_step.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_arg.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/PartialPivLU_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_abs2.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/ComplexEigenSolver_eigenvectors.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_exp.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_times_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_diagonal_template_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_greater_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/SelfAdjointEigenSolver_compute_MatrixType.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Jacobi_makeGivens.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_round.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_random_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Matrix_resize_NoChange_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_less_equal.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/DirectionWise_replicate_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_rowwise.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_cwiseAbs.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/DenseBase_LinSpaced_seq.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_sinh.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_array_const.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/MatrixBase_computeInverseWithCheck.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Cwise_atan.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/Tutorial_solve_matrix_inverse.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/tut_arithmetic_transpose_conjugate.cpp"/>
+          <File Name="src/Eigen-3.3/doc/snippets/VectorwiseOp_homogeneous.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="special_examples">
+          <File Name="src/Eigen-3.3/doc/special_examples/Tutorial_sparse_example_details.cpp"/>
+          <File Name="src/Eigen-3.3/doc/special_examples/Tutorial_sparse_example.cpp"/>
+          <File Name="src/Eigen-3.3/doc/special_examples/random_cpp11.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="examples">
+          <File Name="src/Eigen-3.3/doc/examples/TemplateKeyword_flexible.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ArrayClass_mult.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/CustomizingEigen_Inheritance.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_BlockOperations_vector.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ArrayClass_cwise_other.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_arithmetic_dot_cross.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_simple_example_dynamic_size.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgComputeTwice.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_BlockOperations_print_block.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/QuickStart_example.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_arithmetic_matrix_mul.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ArrayClass_addition.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_arithmetic_add_sub.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Cwise_lgamma.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_PartialLU_solve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_matrix_resize_fixed_size.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/class_CwiseUnaryOp.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_BlockOperations_colrow.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgExSolveLDLT.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Cwise_erfc.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/DenseBase_template_int_middleRows.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/QuickStart_example2_fixed.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_matrix_resize.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/class_FixedBlock.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_simple_example_fixed_size.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgExComputeSolveError.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgExSolveColPivHouseholderQR.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/class_CwiseBinaryOp.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ArrayClass_accessors.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_rowwise.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_arithmetic_scalar_mul_div.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_colwise.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgSVDSolve.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_matrix_coefficient_accessors.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/QuickStart_example2_dynamic.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/tut_arithmetic_redux_basic.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/class_CwiseUnaryOp_ptrfun.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/DenseBase_template_int_middleCols.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/function_taking_ref.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/DenseBase_middleCols_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ArrayClass_interop_matrix.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_visitors.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgSetThreshold.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_reductions_operatornorm.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ArrayClass_interop.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialInplaceLU.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/function_taking_eigenbase.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/DenseBase_middleRows_int.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/matrixfree_cg.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/make_circulant2.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_BlockOperations_corner.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/class_FixedVectorBlock.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgInverseDeterminant.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgSelfAdjointEigenSolver.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_BlockOperations_block_assignment.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/class_VectorBlock.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/make_circulant.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Tutorial_ReductionsVisitorsBroadcasting_maxnorm.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/nullary_indexing.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TemplateKeyword_simple.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/TutorialLinAlgRankRevealing.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/class_Block.cpp"/>
+          <File Name="src/Eigen-3.3/doc/examples/Cwise_erf.cpp"/>
+        </VirtualDirectory>
+        <File Name="src/Eigen-3.3/doc/tutorial.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="bench">
+        <VirtualDirectory Name="btl">
+          <VirtualDirectory Name="generic_bench">
+            <VirtualDirectory Name="utils">
+              <File Name="src/Eigen-3.3/bench/btl/generic_bench/utils/utilities.h"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="libs">
+            <VirtualDirectory Name="eigen2">
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen2/main_vecmat.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen2/main_matmat.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen2/main_linear.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen2/btl_tiny_eigen2.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen2/main_adv.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="gmm">
+              <File Name="src/Eigen-3.3/bench/btl/libs/gmm/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="eigen3">
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen3/main_vecmat.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen3/main_matmat.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen3/main_linear.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen3/btl_tiny_eigen3.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/eigen3/main_adv.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="tvmet">
+              <File Name="src/Eigen-3.3/bench/btl/libs/tvmet/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="tensors">
+              <File Name="src/Eigen-3.3/bench/btl/libs/tensors/main_vecmat.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/tensors/main_matmat.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/tensors/main_linear.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="BLAS">
+              <File Name="src/Eigen-3.3/bench/btl/libs/BLAS/c_interface_base.h"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/BLAS/blas.h"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/BLAS/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="blitz">
+              <File Name="src/Eigen-3.3/bench/btl/libs/blitz/btl_tiny_blitz.cpp"/>
+              <File Name="src/Eigen-3.3/bench/btl/libs/blitz/btl_blitz.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="STL">
+              <File Name="src/Eigen-3.3/bench/btl/libs/STL/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="blaze">
+              <File Name="src/Eigen-3.3/bench/btl/libs/blaze/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="mtl4">
+              <File Name="src/Eigen-3.3/bench/btl/libs/mtl4/main.cpp"/>
+            </VirtualDirectory>
+            <VirtualDirectory Name="ublas">
+              <File Name="src/Eigen-3.3/bench/btl/libs/ublas/main.cpp"/>
+            </VirtualDirectory>
+          </VirtualDirectory>
+          <VirtualDirectory Name="data">
+            <File Name="src/Eigen-3.3/bench/btl/data/mean.cxx"/>
+            <File Name="src/Eigen-3.3/bench/btl/data/regularize.cxx"/>
+            <File Name="src/Eigen-3.3/bench/btl/data/smooth.cxx"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="perf_monitoring">
+          <VirtualDirectory Name="gemm">
+            <File Name="src/Eigen-3.3/bench/perf_monitoring/gemm/gemm.cpp"/>
+            <File Name="src/Eigen-3.3/bench/perf_monitoring/gemm/lazy_gemm.cpp"/>
+          </VirtualDirectory>
+        </VirtualDirectory>
+        <VirtualDirectory Name="spbench">
+          <File Name="src/Eigen-3.3/bench/spbench/spbenchsolver.h"/>
+          <File Name="src/Eigen-3.3/bench/spbench/sp_solver.cpp"/>
+          <File Name="src/Eigen-3.3/bench/spbench/spbenchstyle.h"/>
+          <File Name="src/Eigen-3.3/bench/spbench/spbenchsolver.cpp"/>
+          <File Name="src/Eigen-3.3/bench/spbench/test_sparseLU.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="tensors">
+          <File Name="src/Eigen-3.3/bench/tensors/tensor_benchmarks_cpu.cc"/>
+          <File Name="src/Eigen-3.3/bench/tensors/benchmark.h"/>
+          <File Name="src/Eigen-3.3/bench/tensors/tensor_benchmarks.h"/>
+          <File Name="src/Eigen-3.3/bench/tensors/contraction_benchmarks_cpu.cc"/>
+          <File Name="src/Eigen-3.3/bench/tensors/tensor_benchmarks_sycl.cc"/>
+          <File Name="src/Eigen-3.3/bench/tensors/benchmark_main.cc"/>
+        </VirtualDirectory>
+        <File Name="src/Eigen-3.3/bench/benchmarkSlice.cpp"/>
+        <File Name="src/Eigen-3.3/bench/BenchSparseUtil.h"/>
+        <File Name="src/Eigen-3.3/bench/sparse_setter.cpp"/>
+        <File Name="src/Eigen-3.3/bench/BenchUtil.h"/>
+        <File Name="src/Eigen-3.3/bench/sparse_cholesky.cpp"/>
+        <File Name="src/Eigen-3.3/bench/basicbenchmark.cpp"/>
+        <File Name="src/Eigen-3.3/bench/bench_reverse.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchmarkX.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchVecAdd.cpp"/>
+        <File Name="src/Eigen-3.3/bench/product_threshold.cpp"/>
+        <File Name="src/Eigen-3.3/bench/sparse_randomsetter.cpp"/>
+        <File Name="src/Eigen-3.3/bench/sparse_trisolver.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchmarkXcwise.cpp"/>
+        <File Name="src/Eigen-3.3/bench/analyze-blocking-sizes.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchGeometry.cpp"/>
+        <File Name="src/Eigen-3.3/bench/bench_sum.cpp"/>
+        <File Name="src/Eigen-3.3/bench/eig33.cpp"/>
+        <File Name="src/Eigen-3.3/bench/basicbenchmark.h"/>
+        <File Name="src/Eigen-3.3/bench/BenchTimer.h"/>
+        <File Name="src/Eigen-3.3/bench/dense_solvers.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchmark.cpp"/>
+        <File Name="src/Eigen-3.3/bench/sparse_product.cpp"/>
+        <File Name="src/Eigen-3.3/bench/sparse_lu.cpp"/>
+        <File Name="src/Eigen-3.3/bench/quat_slerp.cpp"/>
+        <File Name="src/Eigen-3.3/bench/bench_norm.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchFFT.cpp"/>
+        <File Name="src/Eigen-3.3/bench/vdw_new.cpp"/>
+        <File Name="src/Eigen-3.3/bench/quatmul.cpp"/>
+        <File Name="src/Eigen-3.3/bench/sparse_dense_product.cpp"/>
+        <File Name="src/Eigen-3.3/bench/geometry.cpp"/>
+        <File Name="src/Eigen-3.3/bench/spmv.cpp"/>
+        <File Name="src/Eigen-3.3/bench/sparse_transpose.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchCholesky.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchmark-blocking-sizes.cpp"/>
+        <File Name="src/Eigen-3.3/bench/bench_gemm.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchEigenSolver.cpp"/>
+        <File Name="src/Eigen-3.3/bench/benchBlasGemm.cpp"/>
+        <File Name="src/Eigen-3.3/bench/check_cache_queries.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="demos">
+        <VirtualDirectory Name="opengl">
+          <File Name="src/Eigen-3.3/demos/opengl/camera.cpp"/>
+          <File Name="src/Eigen-3.3/demos/opengl/quaternion_demo.h"/>
+          <File Name="src/Eigen-3.3/demos/opengl/trackball.h"/>
+          <File Name="src/Eigen-3.3/demos/opengl/trackball.cpp"/>
+          <File Name="src/Eigen-3.3/demos/opengl/camera.h"/>
+          <File Name="src/Eigen-3.3/demos/opengl/quaternion_demo.cpp"/>
+          <File Name="src/Eigen-3.3/demos/opengl/gpuhelper.h"/>
+          <File Name="src/Eigen-3.3/demos/opengl/icosphere.h"/>
+          <File Name="src/Eigen-3.3/demos/opengl/gpuhelper.cpp"/>
+          <File Name="src/Eigen-3.3/demos/opengl/icosphere.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="mandelbrot">
+          <File Name="src/Eigen-3.3/demos/mandelbrot/mandelbrot.h"/>
+          <File Name="src/Eigen-3.3/demos/mandelbrot/mandelbrot.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="mix_eigen_and_c">
+          <File Name="src/Eigen-3.3/demos/mix_eigen_and_c/binary_library.cpp"/>
+          <File Name="src/Eigen-3.3/demos/mix_eigen_and_c/example.c"/>
+          <File Name="src/Eigen-3.3/demos/mix_eigen_and_c/binary_library.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="blas">
+        <VirtualDirectory Name="f2c">
+          <File Name="src/Eigen-3.3/blas/f2c/complexdots.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/datatypes.h"/>
+          <File Name="src/Eigen-3.3/blas/f2c/r_cnjg.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/zhbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/zhpmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/chbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/lsame.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/d_cnjg.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/drotmg.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/ctbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/srotmg.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/dsbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/dspmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/srotm.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/chpmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/ssbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/stbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/ztbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/dtbmv.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/drotm.c"/>
+          <File Name="src/Eigen-3.3/blas/f2c/sspmv.c"/>
+        </VirtualDirectory>
+        <File Name="src/Eigen-3.3/blas/double.cpp"/>
+        <File Name="src/Eigen-3.3/blas/level1_impl.h"/>
+        <File Name="src/Eigen-3.3/blas/level2_impl.h"/>
+        <File Name="src/Eigen-3.3/blas/level1_cplx_impl.h"/>
+        <File Name="src/Eigen-3.3/blas/single.cpp"/>
+        <File Name="src/Eigen-3.3/blas/PackedTriangularMatrixVector.h"/>
+        <File Name="src/Eigen-3.3/blas/level2_cplx_impl.h"/>
+        <File Name="src/Eigen-3.3/blas/complex_single.cpp"/>
+        <File Name="src/Eigen-3.3/blas/PackedTriangularSolverVector.h"/>
+        <File Name="src/Eigen-3.3/blas/complex_double.cpp"/>
+        <File Name="src/Eigen-3.3/blas/Rank2Update.h"/>
+        <File Name="src/Eigen-3.3/blas/level2_real_impl.h"/>
+        <File Name="src/Eigen-3.3/blas/BandTriangularSolver.h"/>
+        <File Name="src/Eigen-3.3/blas/level3_impl.h"/>
+        <File Name="src/Eigen-3.3/blas/xerbla.cpp"/>
+        <File Name="src/Eigen-3.3/blas/PackedSelfadjointProduct.h"/>
+        <File Name="src/Eigen-3.3/blas/GeneralRank1Update.h"/>
+        <File Name="src/Eigen-3.3/blas/common.h"/>
+        <File Name="src/Eigen-3.3/blas/level1_real_impl.h"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="failtest">
+        <File Name="src/Eigen-3.3/failtest/const_qualified_block_method_retval_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ldlt_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/block_on_const_type_actually_const_0.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/map_nonconst_ctor_on_const_ptr_3.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/cwiseunaryview_on_const_type_actually_const.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/map_on_const_type_actually_const_0.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/const_qualified_block_method_retval_0.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/swap_2.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ternary_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/sparse_ref_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/sparse_ref_2.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/transpose_nonconst_ctor_on_const_xpr.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ref_5.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/jacobisvd_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/map_nonconst_ctor_on_const_ptr_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/selfadjointview_nonconst_ctor_on_const_xpr.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/map_nonconst_ctor_on_const_ptr_0.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/map_nonconst_ctor_on_const_ptr_2.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/const_qualified_diagonal_method_retval.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/bdcsvd_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/block_nonconst_ctor_on_const_xpr_0.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/block_on_const_type_actually_const_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/failtest_sanity_check.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/map_on_const_type_actually_const_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/sparse_ref_5.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/block_nonconst_ctor_on_const_xpr_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ref_2.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ternary_2.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/triangularview_on_const_type_actually_const.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/cwiseunaryview_nonconst_ctor_on_const_xpr.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/fullpivlu_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/sparse_storage_mismatch.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ref_3.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/colpivqr_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/eigensolver_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/sparse_ref_3.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/eigensolver_cplx.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ref_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/const_qualified_transpose_method_retval.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/transpose_on_const_type_actually_const.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/triangularview_nonconst_ctor_on_const_xpr.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/selfadjointview_on_const_type_actually_const.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/ref_4.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/partialpivlu_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/diagonal_nonconst_ctor_on_const_xpr.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/fullpivqr_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/block_nonconst_ctor_on_const_xpr_2.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/swap_1.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/llt_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/map_nonconst_ctor_on_const_ptr_4.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/sparse_ref_4.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/qr_int.cpp"/>
+        <File Name="src/Eigen-3.3/failtest/diagonal_on_const_type_actually_const.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="lapack">
+        <File Name="src/Eigen-3.3/lapack/double.cpp"/>
+        <File Name="src/Eigen-3.3/lapack/svd.cpp"/>
+        <File Name="src/Eigen-3.3/lapack/single.cpp"/>
+        <File Name="src/Eigen-3.3/lapack/complex_single.cpp"/>
+        <File Name="src/Eigen-3.3/lapack/complex_double.cpp"/>
+        <File Name="src/Eigen-3.3/lapack/cholesky.cpp"/>
+        <File Name="src/Eigen-3.3/lapack/eigenvalues.cpp"/>
+        <File Name="src/Eigen-3.3/lapack/lapack_common.h"/>
+        <File Name="src/Eigen-3.3/lapack/lu.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="scripts">
+        <File Name="src/Eigen-3.3/scripts/eigen_gen_credits.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="test">
+        <File Name="src/Eigen-3.3/test/stddeque.cpp"/>
+        <File Name="src/Eigen-3.3/test/vectorwiseop.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse_vector.cpp"/>
+        <File Name="src/Eigen-3.3/test/nomalloc.cpp"/>
+        <File Name="src/Eigen-3.3/test/commainitializer.cpp"/>
+        <File Name="src/Eigen-3.3/test/eigensolver_complex.cpp"/>
+        <File Name="src/Eigen-3.3/test/evaluator_common.h"/>
+        <File Name="src/Eigen-3.3/test/evaluators.cpp"/>
+        <File Name="src/Eigen-3.3/test/inplace_decomposition.cpp"/>
+        <File Name="src/Eigen-3.3/test/diagonal.cpp"/>
+        <File Name="src/Eigen-3.3/test/superlu_support.cpp"/>
+        <File Name="src/Eigen-3.3/test/vectorization_logic.cpp"/>
+        <File Name="src/Eigen-3.3/test/is_same_dense.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse_basic.cpp"/>
+        <File Name="src/Eigen-3.3/test/bug1213.cpp"/>
+        <File Name="src/Eigen-3.3/test/dontalign.cpp"/>
+        <File Name="src/Eigen-3.3/test/unalignedassert.cpp"/>
+        <File Name="src/Eigen-3.3/test/schur_real.cpp"/>
+        <File Name="src/Eigen-3.3/test/svd_fill.h"/>
+        <File Name="src/Eigen-3.3/test/umfpack_support.cpp"/>
+        <File Name="src/Eigen-3.3/test/smallvectors.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_notemporary.cpp"/>
+        <File Name="src/Eigen-3.3/test/special_numbers.cpp"/>
+        <File Name="src/Eigen-3.3/test/constructor.cpp"/>
+        <File Name="src/Eigen-3.3/test/visitor.cpp"/>
+        <File Name="src/Eigen-3.3/test/triangular.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse.h"/>
+        <File Name="src/Eigen-3.3/test/packetmath.cpp"/>
+        <File Name="src/Eigen-3.3/test/householder.cpp"/>
+        <File Name="src/Eigen-3.3/test/array_of_string.cpp"/>
+        <File Name="src/Eigen-3.3/test/pardiso_support.cpp"/>
+        <File Name="src/Eigen-3.3/test/diagonalmatrices.cpp"/>
+        <File Name="src/Eigen-3.3/test/geo_homogeneous.cpp"/>
+        <File Name="src/Eigen-3.3/test/eigensolver_selfadjoint.cpp"/>
+        <File Name="src/Eigen-3.3/test/upperbidiagonalization.cpp"/>
+        <File Name="src/Eigen-3.3/test/incomplete_cholesky.cpp"/>
+        <File Name="src/Eigen-3.3/test/block.cpp"/>
+        <File Name="src/Eigen-3.3/test/adjoint.cpp"/>
+        <File Name="src/Eigen-3.3/test/ctorleak.cpp"/>
+        <File Name="src/Eigen-3.3/test/jacobisvd.cpp"/>
+        <File Name="src/Eigen-3.3/test/swap.cpp"/>
+        <File Name="src/Eigen-3.3/test/geo_eulerangles.cpp"/>
+        <File Name="src/Eigen-3.3/test/simplicial_cholesky.cpp"/>
+        <File Name="src/Eigen-3.3/test/miscmatrices.cpp"/>
+        <File Name="src/Eigen-3.3/test/ref.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse_solver.h"/>
+        <File Name="src/Eigen-3.3/test/lscg.cpp"/>
+        <File Name="src/Eigen-3.3/test/denseLM.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse_permutations.cpp"/>
+        <File Name="src/Eigen-3.3/test/mapstaticmethods.cpp"/>
+        <File Name="src/Eigen-3.3/test/mapped_matrix.cpp"/>
+        <File Name="src/Eigen-3.3/test/schur_complex.cpp"/>
+        <File Name="src/Eigen-3.3/test/zerosized.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_large.cpp"/>
+        <File Name="src/Eigen-3.3/test/corners.cpp"/>
+        <File Name="src/Eigen-3.3/test/real_qz.cpp"/>
+        <File Name="src/Eigen-3.3/test/geo_orthomethods.cpp"/>
+        <File Name="src/Eigen-3.3/test/fastmath.cpp"/>
+        <File Name="src/Eigen-3.3/test/dynalloc.cpp"/>
+        <File Name="src/Eigen-3.3/test/hessenberg.cpp"/>
+        <File Name="src/Eigen-3.3/test/first_aligned.cpp"/>
+        <File Name="src/Eigen-3.3/test/exceptions.cpp"/>
+        <File Name="src/Eigen-3.3/test/umeyama.cpp"/>
+        <File Name="src/Eigen-3.3/test/eigensolver_generic.cpp"/>
+        <File Name="src/Eigen-3.3/test/basicstuff.cpp"/>
+        <File Name="src/Eigen-3.3/test/eigen2support.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparselu.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_mmtr.cpp"/>
+        <File Name="src/Eigen-3.3/test/prec_inverse_4x4.cpp"/>
+        <File Name="src/Eigen-3.3/test/rvalue_types.cpp"/>
+        <File Name="src/Eigen-3.3/test/geo_hyperplane.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_syrk.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_selfadjoint.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse_product.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparseqr.cpp"/>
+        <File Name="src/Eigen-3.3/test/array_reverse.cpp"/>
+        <File Name="src/Eigen-3.3/test/permutationmatrices.cpp"/>
+        <File Name="src/Eigen-3.3/test/linearstructure.cpp"/>
+        <File Name="src/Eigen-3.3/test/qr_colpivoting.cpp"/>
+        <File Name="src/Eigen-3.3/test/qtvector.cpp"/>
+        <File Name="src/Eigen-3.3/test/array_for_matrix.cpp"/>
+        <File Name="src/Eigen-3.3/test/stdlist.cpp"/>
+        <File Name="src/Eigen-3.3/test/qr_fullpivoting.cpp"/>
+        <File Name="src/Eigen-3.3/test/mpl2only.cpp"/>
+        <File Name="src/Eigen-3.3/test/redux.cpp"/>
+        <File Name="src/Eigen-3.3/test/cholesky.cpp"/>
+        <File Name="src/Eigen-3.3/test/geo_parametrizedline.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_extra.cpp"/>
+        <File Name="src/Eigen-3.3/test/sizeoverflow.cpp"/>
+        <File Name="src/Eigen-3.3/test/half_float.cpp"/>
+        <File Name="src/Eigen-3.3/test/bdcsvd.cpp"/>
+        <File Name="src/Eigen-3.3/test/selfadjoint.cpp"/>
+        <File Name="src/Eigen-3.3/test/stdvector.cpp"/>
+        <File Name="src/Eigen-3.3/test/array.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_small.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse_block.cpp"/>
+        <File Name="src/Eigen-3.3/test/nullary.cpp"/>
+        <File Name="src/Eigen-3.3/test/product.h"/>
+        <File Name="src/Eigen-3.3/test/boostmultiprec.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_trsolve.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_symm.cpp"/>
+        <File Name="src/Eigen-3.3/test/conjugate_gradient.cpp"/>
+        <File Name="src/Eigen-3.3/test/sizeof.cpp"/>
+        <File Name="src/Eigen-3.3/test/cholmod_support.cpp"/>
+        <File Name="src/Eigen-3.3/test/bug1213.h"/>
+        <File Name="src/Eigen-3.3/test/bug1213_main.cpp"/>
+        <File Name="src/Eigen-3.3/test/geo_alignedbox.cpp"/>
+        <File Name="src/Eigen-3.3/test/inverse.cpp"/>
+        <File Name="src/Eigen-3.3/test/qr.cpp"/>
+        <File Name="src/Eigen-3.3/test/cuda_common.h"/>
+        <File Name="src/Eigen-3.3/test/resize.cpp"/>
+        <File Name="src/Eigen-3.3/test/eigensolver_generalized_real.cpp"/>
+        <File Name="src/Eigen-3.3/test/meta.cpp"/>
+        <File Name="src/Eigen-3.3/test/pastix_support.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparse_solvers.cpp"/>
+        <File Name="src/Eigen-3.3/test/main.h"/>
+        <File Name="src/Eigen-3.3/test/geo_transformations.cpp"/>
+        <File Name="src/Eigen-3.3/test/stdlist_overload.cpp"/>
+        <File Name="src/Eigen-3.3/test/nesting_ops.cpp"/>
+        <File Name="src/Eigen-3.3/test/integer_types.cpp"/>
+        <File Name="src/Eigen-3.3/test/mapstride.cpp"/>
+        <File Name="src/Eigen-3.3/test/spqr_support.cpp"/>
+        <File Name="src/Eigen-3.3/test/determinant.cpp"/>
+        <File Name="src/Eigen-3.3/test/jacobi.cpp"/>
+        <File Name="src/Eigen-3.3/test/bandmatrix.cpp"/>
+        <File Name="src/Eigen-3.3/test/stddeque_overload.cpp"/>
+        <File Name="src/Eigen-3.3/test/stable_norm.cpp"/>
+        <File Name="src/Eigen-3.3/test/geo_quaternion.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_trmm.cpp"/>
+        <File Name="src/Eigen-3.3/test/mixingtypes.cpp"/>
+        <File Name="src/Eigen-3.3/test/rand.cpp"/>
+        <File Name="src/Eigen-3.3/test/stdvector_overload.cpp"/>
+        <File Name="src/Eigen-3.3/test/array_replicate.cpp"/>
+        <File Name="src/Eigen-3.3/test/lu.cpp"/>
+        <File Name="src/Eigen-3.3/test/unalignedcount.cpp"/>
+        <File Name="src/Eigen-3.3/test/dense_storage.cpp"/>
+        <File Name="src/Eigen-3.3/test/sparseLM.cpp"/>
+        <File Name="src/Eigen-3.3/test/metis_support.cpp"/>
+        <File Name="src/Eigen-3.3/test/product_trmv.cpp"/>
+        <File Name="src/Eigen-3.3/test/svd_common.h"/>
+        <File Name="src/Eigen-3.3/test/sparse_ref.cpp"/>
+        <File Name="src/Eigen-3.3/test/bicgstab.cpp"/>
+        <File Name="src/Eigen-3.3/test/conservative_resize.cpp"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <File Name="src/json.hpp"/>
+    <File Name="src/main.cpp"/>
+    <File Name="src/blackbox.cpp"/>
+    <File Name="src/blackbox.h"/>
+    <File Name="src/spline.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="build">
+    <VirtualDirectory Name="CMakeFiles">
+      <VirtualDirectory Name="3.8.1">
+        <VirtualDirectory Name="CompilerIdCXX">
+          <File Name="build/CMakeFiles/3.8.1/CompilerIdCXX/CMakeCXXCompilerId.cpp"/>
+        </VirtualDirectory>
+        <VirtualDirectory Name="CompilerIdC">
+          <File Name="build/CMakeFiles/3.8.1/CompilerIdC/CMakeCCompilerId.c"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <File Name="build/CMakeFiles/feature_tests.cxx"/>
+      <File Name="build/CMakeFiles/feature_tests.c"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-std=c++11;-g -Wall" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O0" Required="yes">
+        <LibraryPath Value="."/>
+        <LibraryPath Value="Debug"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./Debug" PauseExecWhenProcTerminates="no" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>
