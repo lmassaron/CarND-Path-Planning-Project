@@ -7,11 +7,11 @@ In this project the goal is to safely navigate around a virtual highway with oth
 
 ---
 
-### Reflection on how to generate paths
+## Reflection on how to generate paths
 
 The path generation happend throught 3 phases, happening at each refresh, though planning and execution depend on how much is left to be executed by the car. If the car is still busy executing previous trajectory orders, only the sensory scan is effectively completed. 
 
-## Sensory phase
+### Sensory phase
 In this phase, happening at each refresh, the cars are roughly scanned in order to figure out:
 
 * how many cars in front of you on in each lane (traffic density)
@@ -20,11 +20,11 @@ In this phase, happening at each refresh, the cars are roughly scanned in order 
 
 speed and distance are calculated roughly, since they simply serve the purpouse to tell you if you are going to bump into a car, at what speed adjust yours in order not to bump, howe large is the empty space around your car.
 
-## Behaviour planning
+### Behaviour planning
 In this phase, each lane is considered as a state and it is measured using appropriate costs functions. Each lane is then quantified and compared against the others. The winning lane is then compared with the actual one. If it is the same, then the speed is checked against the nearest. If the lane is different, the presence of a gap is calculated providing a go or stop decision on changing lanes (if the change involves crossing two lanes, the cost is summed).
 
 
-## Trajectory planning and execution
+### Trajectory planning and execution
 No matter the decision is to stay on the same name, at the same speed or changing velocity, or to change completely lane, the trajectory is calculated by the JMT, the polynomial optimization of a quintilic aiming at minimizing the jerk given a starting state and an ending one. The JMT takes care also about the speed, thus no aprticular treatment is to be done. The trajectory is calculated in order to take 2-2 1/2 seconds, not more, as required by the rubric.
 
 Once the JMT estimates the s and d values for the jerkless trajectory, s and d are translated into local coordinates by means of previously trained splines that represent on the basis of s, the entire circuit.
